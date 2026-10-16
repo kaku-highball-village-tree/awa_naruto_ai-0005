@@ -14,15 +14,15 @@ button { padding: 9px 18px; background: #314e3b; color: white; border: 0; border
 .school-name { font-size: 16pt; font-weight: 700; }
 .tagline { margin-left: auto; font-size: 10pt; font-weight: 700; }
 .courses { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: repeat(3,minmax(0,1fr)); gap: 3mm 5mm; padding: 0 6mm 3mm; }
-.course { min-width: 0; background: rgba(var(--course-tint), .72); border: .2mm solid #d9d9ca; border-left: 1.8mm solid var(--course-accent); break-inside: avoid; }
+.course { min-width: 0; background: rgba(var(--course-tint), .42); border: .2mm solid #d9d9ca; border-left: 1.8mm solid var(--course-accent); break-inside: avoid; }
 /* 各コースの淡い配色：本文・見出し・左罫線を同じ色系統にします。 */
-.course:nth-child(1) { --course-tint: 245, 250, 239; --course-heading: 232, 242, 220; --course-accent: #b4cc97; } /* 児童：若草 */
-.course:nth-child(2) { --course-tint: 255, 251, 238; --course-heading: 250, 240, 211; --course-accent: #dbc385; } /* 一般：クリーム */
-.course:nth-child(3) { --course-tint: 240, 248, 255; --course-heading: 224, 239, 251; --course-accent: #a2c5df; } /* 高校生：水色 */
-.course:nth-child(4) { --course-tint: 255, 243, 245; --course-heading: 250, 226, 233; --course-accent: #d9aebc; } /* 高3：桜色 */
-.course:nth-child(5) { --course-tint: 248, 243, 255; --course-heading: 237, 227, 248; --course-accent: #bfa9d9; } /* 高1・高2：藤色 */
-.course:nth-child(6) { --course-tint: 239, 250, 247; --course-heading: 220, 242, 234; --course-accent: #a2cdbf; } /* 中学生：ミント */
-.course-header { background: rgba(var(--course-heading), .88); height: 12mm; display: flex; justify-content: space-between; align-items: flex-start; padding: 1.4mm 3mm; }
+.course:nth-child(1) { --course-tint: 245, 250, 239; --course-heading: 216, 237, 196; --course-accent: #b4cc97; } /* 児童：若草 */
+.course:nth-child(2) { --course-tint: 255, 251, 238; --course-heading: 255, 235, 187; --course-accent: #dbc385; } /* 一般：クリーム */
+.course:nth-child(3) { --course-tint: 240, 248, 255; --course-heading: 199, 226, 249; --course-accent: #a2c5df; } /* 高校生：水色 */
+.course:nth-child(4) { --course-tint: 255, 243, 245; --course-heading: 251, 210, 224; --course-accent: #d9aebc; } /* 高3：桜色 */
+.course:nth-child(5) { --course-tint: 248, 243, 255; --course-heading: 227, 210, 249; --course-accent: #bfa9d9; } /* 高1・高2：藤色 */
+.course:nth-child(6) { --course-tint: 239, 250, 247; --course-heading: 197, 237, 222; --course-accent: #a2cdbf; } /* 中学生：ミント */
+.course-header { background: rgba(var(--course-heading), .68); height: 12mm; display: flex; justify-content: space-between; align-items: flex-start; padding: 1.4mm 3mm; }
 h2 { font-size: 14pt; line-height: 1.15; margin: 0; }
 .subtitle { font-size: 8.5pt; color: #68705f; margin: .4mm 0 0; line-height: 1.2; }
 .capacity { font-size: 10pt; white-space: nowrap; font-weight: 700; padding-top: .6mm; }
