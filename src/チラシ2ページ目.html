@@ -6,16 +6,18 @@
 body { margin: 0; background: #deded8; }
 .toolbar { max-width: 297mm; margin: 12px auto; display: flex; align-items: center; gap: 16px; padding: 0 12px; font-size: 14px; }
 button { padding: 9px 18px; background: #314e3b; color: white; border: 0; border-radius: 5px; cursor: pointer; font: inherit; }
-.sheet { width: 297mm; height: 210mm; margin: 0 auto 16px; background: #f9f9f4; display: grid; grid-template-rows: 16mm 151mm 43mm; }
+.sheet { width: 297mm; height: 210mm; margin: 0 auto 16px; background: #f9f9f4; display: grid; grid-template-rows: 167mm 43mm; }
+/* HTMLと同じフォルダーの images/img_awa_naruto_ai_0004.png を背景として読み込みます。 */
+.recruitment-content { display: grid; grid-template-rows: 16mm 151mm; min-height: 0; background-color: #f9f9f4; background-image: url("images/img_awa_naruto_ai_0004.png"); background-size: cover; background-position: center; background-repeat: no-repeat; }
 .page-header { display: flex; align-items: center; gap: 6mm; padding: 2mm 6mm; }
 .page-header h1 { margin: 0; font-size: 17pt; background: #c6e3b9; padding: 1mm 4mm; letter-spacing: .12em; }
 .school-name { font-size: 16pt; font-weight: 700; }
 .tagline { margin-left: auto; font-size: 10pt; font-weight: 700; }
 .courses { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: repeat(3,minmax(0,1fr)); gap: 3mm 5mm; padding: 0 6mm 3mm; }
-.course { min-width: 0; background: #fff; border: .2mm solid #d9d9ca; border-left: 1.8mm solid #b8d198; break-inside: avoid; }
+.course { min-width: 0; background: rgba(255, 255, 255, .78); border: .2mm solid #d9d9ca; border-left: 1.8mm solid #b8d198; break-inside: avoid; }
 .course:nth-child(even) { border-left-color: #dfbd79; }
-.course-header { background: #ecf3e3; height: 12mm; display: flex; justify-content: space-between; align-items: flex-start; padding: 1.4mm 3mm; }
-.course:nth-child(even) .course-header { background: #faf0d8; }
+.course-header { background: rgba(236, 243, 227, .88); height: 12mm; display: flex; justify-content: space-between; align-items: flex-start; padding: 1.4mm 3mm; }
+.course:nth-child(even) .course-header { background: rgba(250, 240, 216, .88); }
 h2 { font-size: 14pt; line-height: 1.15; margin: 0; }
 .subtitle { font-size: 8.5pt; color: #68705f; margin: .4mm 0 0; line-height: 1.2; }
 .capacity { font-size: 10pt; white-space: nowrap; font-weight: 700; padding-top: .6mm; }
@@ -47,8 +49,9 @@ dt { font-weight: 700; } dd { margin: 0; }
 @media print { body { background: white; } .toolbar { display: none; } .sheet { margin: 0; } * { print-color-adjust: exact; -webkit-print-color-adjust: exact; } }
 </style></head><body>
 <div class="toolbar"><button type="button" onclick="window.print()">印刷・PDF保存</button><span>A4・横向き／倍率100％／余白なし／ヘッダーとフッターをオフ／背景のグラフィックをオン</span></div>
-<!-- コースの文言・日時・料金は、以下の各 section 内で編集できます。外部CSS・画像ファイルは不要です（講師紹介のロゴは埋め込み済み）。 -->
+<!-- コースの文言・日時・料金は、以下の各 section 内で編集できます。CSS・講師紹介のロゴは埋め込み済みです。背景画像は images/img_awa_naruto_ai_0004.png に配置してください。 -->
 <main class="sheet" aria-label="阿波なるとAI塾 募集チラシ2ページ目">
+<div class="recruitment-content">
 <header class="page-header"><h1>募集内容</h1><span class="school-name">阿波なるとAI塾</span><span class="tagline">6つのコースで、学びを応援</span></header>
 <div class="courses"><section class="course" aria-labelledby="youth">
   <header class="course-header"><div><h2 id="youth">児童コース</h2><p class="subtitle">Youth Course</p></div><span class="capacity">定員5名</span></header>
@@ -98,6 +101,7 @@ dt { font-weight: 700; } dd { margin: 0; }
   <div><dt>回数</dt><dd>全4回、1回60分</dd></div>
   <div class="fee"><dt>受講料</dt><dd>2,750円×4回＝11,000円 （税込・税率10％）</dd></div></dl></div>
 </section></div>
+</div><!-- /.recruitment-content -->
 <footer class="page-footer">
 <section class="recruitment"><h2>募集期間</h2><p>令和8年7月1日より受付開始</p><p><small>（各コース開講前まで応募可能）</small></p></section>
 <section class="requirements"><h3>受講必需品</h3><p>パソコンとスマートフォン<br><small>※どちらか一方でも可</small></p><h3>開催場所</h3><p>コミュニティーはうすTSUDOI</p></section>
